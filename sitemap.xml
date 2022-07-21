@@ -10,6 +10,33 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>https://richardlaiiiii.github.io/about/index.html</loc>
+    
+    <lastmod>2022-07-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://richardlaiiiii.github.io/categories/index.html</loc>
+    
+    <lastmod>2022-07-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://richardlaiiiii.github.io/tags/index.html</loc>
+    
+    <lastmod>2022-07-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   <url>
     <loc>https://richardlaiiiii.github.io/</loc>
