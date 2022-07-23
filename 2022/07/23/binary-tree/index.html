@@ -22,25 +22,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"richardlaiiiii.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.12.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="生活片段的小倉庫">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Richard Lai&#39;s Blog">
-<meta property="og:url" content="https://richardlaiiiii.github.io/index.html">
+    <meta name="description" content="123456789101112131415161718192021222324252627282930313233343536373839404142&#x2F;&#x2F; merge sort and quick sort#pragma GCC optimize(&quot;Ofast&quot;)#include &lt;bits&#x2F;stdc++.h&gt;#define int long long#define">
+<meta property="og:type" content="article">
+<meta property="og:title" content="binary_tree&amp;sort">
+<meta property="og:url" content="https://richardlaiiiii.github.io/2022/07/23/binary-tree/index.html">
 <meta property="og:site_name" content="Richard Lai&#39;s Blog">
-<meta property="og:description" content="生活片段的小倉庫">
+<meta property="og:description" content="123456789101112131415161718192021222324252627282930313233343536373839404142&#x2F;&#x2F; merge sort and quick sort#pragma GCC optimize(&quot;Ofast&quot;)#include &lt;bits&#x2F;stdc++.h&gt;#define int long long#define">
 <meta property="og:locale" content="zh_TW">
+<meta property="article:published_time" content="2022-07-23T01:49:31.000Z">
+<meta property="article:modified_time" content="2022-07-23T02:13:46.601Z">
 <meta property="article:author" content="Richard Lai">
+<meta property="article:tag" content="Competitive Programing">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://richardlaiiiii.github.io/">
+<link rel="canonical" href="https://richardlaiiiii.github.io/2022/07/23/binary-tree/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-TW","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://richardlaiiiii.github.io/2022/07/23/binary-tree/","path":"2022/07/23/binary-tree/","title":"binary_tree&sort"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Richard Lai's Blog</title>
+<title>binary_tree&sort | Richard Lai's Blog</title>
   
 
 
@@ -74,7 +77,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">Richard Lai's Blog</h1>
+      <p class="site-title">Richard Lai's Blog</p>
       <i class="logo-line"></i>
     </a>
       <p class="site-subtitle" itemprop="description">加油</p>
@@ -221,16 +224,17 @@
 </noscript>
 
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
     <link itemprop="mainEntityOfPage" href="https://richardlaiiiii.github.io/2022/07/23/binary-tree/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -244,13 +248,13 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Richard Lai's Blog">
+      <meta itemprop="name" content="binary_tree&sort | Richard Lai's Blog">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/07/23/binary-tree/" class="post-title-link" itemprop="url">binary_tree&sort</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          binary_tree&sort
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -289,10 +293,9 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// merge sort and quick sort</span></span><br><span class="line"><span class="meta">#<span class="keyword">pragma</span> GCC optimize(<span class="string">&quot;Ofast&quot;</span>)</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> int long long</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> fastio ios_base::sync_with_stdio(false),cin.tie(0),cout.tie(0)</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">merge</span><span class="params">(vector&lt;<span class="type">int</span>&gt; &amp;v,<span class="type">int</span> L,<span class="type">int</span> M,<span class="type">int</span> R)</span> </span>&#123;</span><br><span class="line">    vector&lt;<span class="type">int</span>&gt;<span class="built_in">left</span>(v.<span class="built_in">begin</span>()+L,v.<span class="built_in">begin</span>()+M+<span class="number">1</span>);</span><br><span class="line">    vector&lt;<span class="type">int</span>&gt;<span class="built_in">right</span>(v.<span class="built_in">begin</span>()+M+<span class="number">1</span>,v.<span class="built_in">begin</span>()+R+<span class="number">1</span>);</span><br><span class="line">    left.<span class="built_in">push_back</span>(INT_MAX);</span><br><span class="line">    right.<span class="built_in">push_back</span>(INT_MAX);</span><br><span class="line">    <span class="type">int</span> index_l=<span class="number">0</span>, index_r=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=L;i&lt;=R;i++) &#123;</span><br><span class="line">        <span class="keyword">if</span>(left[index_l]&lt;=right[index_r]) v[i]=left[index_l++];</span><br><span class="line">        <span class="keyword">else</span> v[i]=right[index_r++];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">merge_sort</span><span class="params">(vector&lt;<span class="type">int</span>&gt; &amp;v,<span class="type">int</span> L,<span class="type">int</span> R)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(L&lt;R) &#123;</span><br><span class="line">        <span class="type">int</span> M=(L+R)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">        <span class="built_in">merge_sort</span>(v,L,M);</span><br><span class="line">        <span class="built_in">merge_sort</span>(v,M+<span class="number">1</span>,R);</span><br><span class="line">        <span class="built_in">merge</span>(v,L,M,R);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">quick_sort</span><span class="params">(<span class="type">int</span> arr[],<span class="type">int</span> L,<span class="type">int</span> R)</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> i=L,j=R,pivot=arr[(L+R)&gt;&gt;<span class="number">1</span>];</span><br><span class="line">    <span class="keyword">while</span>(i&lt;=j) &#123;</span><br><span class="line">        <span class="keyword">while</span>(arr[i]&lt;pivot) i++;</span><br><span class="line">        <span class="keyword">while</span>(arr[j]&gt;pivot) j--;</span><br><span class="line">        <span class="keyword">if</span>(i&lt;=j) <span class="built_in">swap</span>(arr[i],arr[j]),i++,j--;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(j&gt;L) <span class="built_in">quick_sort</span>(arr,L,j);</span><br><span class="line">    <span class="keyword">if</span>(i&lt;R) <span class="built_in">quick_sort</span>(arr,i,R);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    fastio;</span><br><span class="line">    vector&lt;<span class="type">int</span>&gt; v=&#123;<span class="number">4</span>,<span class="number">1</span>,<span class="number">5</span>,<span class="number">3</span>,<span class="number">6</span>,<span class="number">2</span>&#125;;</span><br><span class="line">    <span class="built_in">merge_sort</span>(v,<span class="number">0</span>,<span class="number">5</span>);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">auto</span> i:v) cout&lt;&lt;i&lt;&lt;<span class="string">&quot; &quot;</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// merge sort and quick sort</span></span><br><span class="line"><span class="meta">#<span class="keyword">pragma</span> GCC optimize(<span class="string">&quot;Ofast&quot;</span>)</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> int long long</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> fastio ios_base::sync_with_stdio(false),cin.tie(0),cout.tie(0)</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">merge</span><span class="params">(vector&lt;<span class="type">int</span>&gt; &amp;v,<span class="type">int</span> L,<span class="type">int</span> M,<span class="type">int</span> R)</span> </span>&#123;</span><br><span class="line">    vector&lt;<span class="type">int</span>&gt;<span class="built_in">left</span>(v.<span class="built_in">begin</span>()+L,v.<span class="built_in">begin</span>()+M+<span class="number">1</span>);</span><br><span class="line">    vector&lt;<span class="type">int</span>&gt;<span class="built_in">right</span>(v.<span class="built_in">begin</span>()+M+<span class="number">1</span>,v.<span class="built_in">begin</span>()+R+<span class="number">1</span>);</span><br><span class="line">    left.<span class="built_in">push_back</span>(INT_MAX);</span><br><span class="line">    right.<span class="built_in">push_back</span>(INT_MAX);</span><br><span class="line">    <span class="type">int</span> index_l=<span class="number">0</span>, index_r=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=L;i&lt;=R;i++) &#123;</span><br><span class="line">        <span class="keyword">if</span>(left[index_l]&lt;=right[index_r]) v[i]=left[index_l++];</span><br><span class="line">        <span class="keyword">else</span> v[i]=right[index_r++];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">merge_sort</span><span class="params">(vector&lt;<span class="type">int</span>&gt; &amp;v,<span class="type">int</span> L,<span class="type">int</span> R)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(L&lt;R) &#123;</span><br><span class="line">        <span class="type">int</span> M=(L+R)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">        <span class="built_in">merge_sort</span>(v,L,M);</span><br><span class="line">        <span class="built_in">merge_sort</span>(v,M+<span class="number">1</span>,R);</span><br><span class="line">        <span class="built_in">merge</span>(v,L,M,R);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">quick_sort</span><span class="params">(<span class="type">int</span> arr[],<span class="type">int</span> L,<span class="type">int</span> R)</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> i=L,j=R,pivot=arr[(L+R)&gt;&gt;<span class="number">1</span>];</span><br><span class="line">    <span class="keyword">while</span>(i&lt;=j) &#123;</span><br><span class="line">        <span class="keyword">while</span>(arr[i]&lt;pivot) i++;</span><br><span class="line">        <span class="keyword">while</span>(arr[j]&gt;pivot) j--;</span><br><span class="line">        <span class="keyword">if</span>(i&lt;=j) <span class="built_in">swap</span>(arr[i],arr[j]),i++,j--;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(j&gt;L) <span class="built_in">quick_sort</span>(arr,L,j);</span><br><span class="line">    <span class="keyword">if</span>(i&lt;R) <span class="built_in">quick_sort</span>(arr,i,R);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    fastio;</span><br><span class="line">    vector&lt;<span class="type">int</span>&gt; v=&#123;<span class="number">4</span>,<span class="number">1</span>,<span class="number">5</span>,<span class="number">3</span>,<span class="number">6</span>,<span class="number">2</span>&#125;;</span><br><span class="line">    <span class="built_in">merge_sort</span>(v,<span class="number">0</span>,<span class="number">5</span>);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">auto</span> i:v) cout&lt;&lt;i&lt;&lt;<span class="string">&quot; &quot;</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//以linked list實作</span></span><br><span class="line"><span class="meta">#<span class="keyword">pragma</span> GCC optimize(<span class="string">&quot;Ofast&quot;</span>)</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> int long long</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> fastio ios_base::sync_with_stdio(false),cin.tie(0),cout.tie(0)</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">node</span> &#123;</span><br><span class="line">    <span class="type">int</span> data;</span><br><span class="line">    node *left=<span class="literal">nullptr</span>, *right=<span class="literal">nullptr</span>;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    fastio;</span><br><span class="line">    node *root=<span class="built_in">new</span>(node);</span><br><span class="line">    root-&gt;data=<span class="number">3</span>;</span><br><span class="line">    node *new_node=<span class="built_in">new</span>(node);</span><br><span class="line">    new_node-&gt;data=<span class="number">1</span>;</span><br><span class="line">    root-&gt;left=new_node;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-      
     </div>
 
     
@@ -300,100 +303,21 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
+          <div class="post-tags">
+              <a href="/tags/Competitive-Programing/" rel="tag"># Competitive Programing</a>
+          </div>
 
+        
 
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://richardlaiiiii.github.io/2022/07/22/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Richard Lai">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Richard Lai's Blog">
-      <meta itemprop="description" content="生活片段的小倉庫">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Richard Lai's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/07/22/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">發表於</span>
-
-      <time title="創建時間：2022-07-22 08:38:08" itemprop="dateCreated datePublished" datetime="2022-07-22T08:38:08+08:00">2022-07-22</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新於</span>
-      <time title="修改時間：2022-07-21 22:53:13" itemprop="dateModified" datetime="2022-07-21T22:53:13+08:00">2022-07-21</time>
-    </span>
-
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="文章字數">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">文章字數：</span>
-      <span>298</span>
-    </span>
-    <span class="post-meta-item" title="所需閱讀時間">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">所需閱讀時間 &asymp;</span>
-      <span>1 分鐘</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">char</span> a[<span class="number">12</span>]=&#123;<span class="string">&#x27;H&#x27;</span>,<span class="string">&#x27;e&#x27;</span>,<span class="string">&#x27;l&#x27;</span>,<span class="string">&#x27;l&#x27;</span>,<span class="string">&#x27;o&#x27;</span>,<span class="string">&#x27; &#x27;</span>,<span class="string">&#x27;W&#x27;</span>,<span class="string">&#x27;o&#x27;</span>,<span class="string">&#x27;r&#x27;</span>,<span class="string">&#x27;l&#x27;</span>,<span class="string">&#x27;d&#x27;</span>,<span class="string">&#x27;.&#x27;</span>&#125;;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">12</span>;i++) <span class="built_in">putchar</span>(a[i]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>$$a^2+b^2&#x3D;c^2$$</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/07/22/hello-world/" rel="prev" title="Hello World">
+                  <i class="fa fa-chevron-left"></i> Hello World
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
     </footer>
   </article>
 </div>
@@ -402,6 +326,15 @@
 
 
 
+
+  <script src="https://utteranc.es/client.js"
+        repo="richardlaiiiii/richardlaiiiii.github.io"
+        issue-term="pathname"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+  </script>
+    <div class="comments utterances-container"></div>
 </div>
   </main>
 
